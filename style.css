@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    margin: 20px;
+}
+
+textarea {
+    width: 300px;
+    height: 120px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#cy {
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    background: white;
+    border: 2px solid #ccc;
+}

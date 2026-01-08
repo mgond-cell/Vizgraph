@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph Visualizer</title>
+
+    <!-- Cytoscape CDN -->
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Graph Visualizer (Edge List)</h1>
+
+<div class="container">
+    <textarea id="edgeInput" placeholder="Enter edge list
+Example:
+1 2
+2 3
+3 4
+4 1"></textarea>
+
+    <button onclick="drawGraph()">Visualize Graph</button>
+</div>
+<div id="properties" style="margin:20px; font-size:16px;">
+    <b>Total Nodes:</b> <span id="nodeCount">0</span> |
+    <b>Total Edges:</b> <span id="edgeCount">0</span> |
+    <b>Connected:</b> <span id="connected">-</span>
+</div>
+
+<button onclick="runBFS()">Run BFS</button>
+
+<button onclick="runDFS()">Run DFS</button>
+<button onclick="detectCycle()">Detect Cycle</button>
+<button onclick="showComponents()">Connected Components</button>
+<button onclick="resetGraph()">Reset</button>
+
+
+<div id="cy"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
